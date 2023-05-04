@@ -1,3 +1,5 @@
+import math
+
 import pandas as pd
 import functools
 
@@ -10,4 +12,5 @@ dispersion = functools.reduce(lambda a, b: a+b,
                               )/(sample.size-1)
 
 
-print(dispersion)
+print("dispersion: ", dispersion)
+print("standard deviation: ", math.sqrt(dispersion))
